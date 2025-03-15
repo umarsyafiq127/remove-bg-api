@@ -32,6 +32,5 @@ def remove_bg():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Handler untuk Vercel
-def handler(request):
-    return app(request)
+# Gunakan `app` sebagai entry point untuk Vercel
+app = app
