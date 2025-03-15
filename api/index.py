@@ -34,3 +34,7 @@ def remove_bg():
 
 # Gunakan `app` sebagai entry point untuk Vercel
 handler = app
+
+# Add this block to run the Flask app locally
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
