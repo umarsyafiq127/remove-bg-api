@@ -33,4 +33,4 @@ def remove_bg():
         return jsonify({"error": str(e)}), 500
 
 # Gunakan `app` sebagai entry point untuk Vercel
-app = app
+handler = app
